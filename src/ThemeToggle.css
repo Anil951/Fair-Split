@@ -1,0 +1,17 @@
+.theme-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    color: #000000; /* Change color as needed */
+    transition: color 0.3s ease;
+    top: 20px;
+    right: 10px;
+    position: absolute;
+  }
+  
+
+  
+  .dark-theme .theme-toggle {
+    color: #ffffff; /* Change color for dark mode */
+  }
+
+  

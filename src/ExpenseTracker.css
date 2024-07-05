@@ -1,0 +1,225 @@
+/* Importing Source Code Pro font */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
+/* Applying Source Code Pro font to all elements */
+* {
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* Base styles */
+.expense-tracker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+  background-color: #cbcbcb;;
+}
+
+.add-user-button, .add-expense-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+}
+
+.add-user-button:hover, .add-expense-button:hover {
+  background-color: #2e2e2e;
+  color:white;
+}
+
+.users-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.user-card, .expense {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.user-card:hover,
+.expense:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.user-actions, .expense-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.edit-button, .delete-button, .save-button , .toggle-details-button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.edit-button:hover, .delete-button:hover, .save-button:hover,   .toggle-details-button{
+  color: #555;
+}
+
+.user-details {
+  margin-top: 20px;
+}
+
+.user-details div {
+  margin-bottom: 10px;
+}
+
+.user-details input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.currency-input {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+}
+
+.currency-input .currency-symbol {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #333;
+}
+
+.currency-input input[type="number"] {
+  padding-left: 20px; /* Adjust padding to make room for the currency symbol */
+  width: 100%;
+}
+
+.expense-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.expense-item-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.expense-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label input {
+  margin-right: 5px;
+}
+
+.add-bill-button {
+  padding: 5px 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+
+  background-color: #e4e4e4;
+  color: black;
+  cursor: pointer;
+}
+
+.add-bill-button:hover {
+    background-color: #2e2e2e;
+    color:white;
+}
+
+.expenses-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .users-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .expenses-container {
+    width: 100%;
+  }
+
+  .expense-item-row {
+    flex-direction: column;
+  }
+}
+
+/* Dark mode styles */
+.dark-theme .expense-tracker {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-theme .user-card, .dark-theme .expense {
+  border-color: #444;
+  background-color: #555;
+}
+
+.dark-theme .edit-button, .dark-theme .delete-button, .dark-theme .save-button {
+  color: #ccc;
+}
+
+.dark-theme .edit-button:hover, .dark-theme .delete-button:hover, .dark-theme .save-button:hover {
+  color: #fff;
+}
+
+.dark-theme .add-user-button, .dark-theme .add-expense-button, .dark-theme .add-bill-button {
+  background-color: #4f4f4f;
+  color: white;
+}
+
+.dark-theme .add-user-button:hover, .dark-theme .add-expense-button:hover, .dark-theme .add-bill-button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.dark-theme .currency-input .currency-symbol {
+  color: #ccc;
+}
+
+/* .dark-theme .user-details input, .dark-theme .currency-input input[type="number"] {
+  background-color: #444;
+  color: #fff;
+  border-color: #555;
+  border: 0px;
+}
+
+.dark-theme .user-details input::placeholder, .dark-theme .currency-input input[type="number"]::placeholder {
+  color: #ccc;
+} */
+
+input {
+    border-radius: 3px solid black;
+}

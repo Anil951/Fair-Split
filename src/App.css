@@ -1,0 +1,120 @@
+/* Global styles */
+body {
+  font-family: 'Source Code Pro', monospace;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
+  background-color: #e8e8e8; /* Default light mode background color */
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f0f0f0; /* Light mode header background color */
+  color: #333; /* Light mode text color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header.dark-mode {
+  background-color: #333; /* Dark mode header background color */
+  color: #fff; /* Dark mode text color */
+}
+
+#title {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.info-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.info-button:hover {
+  opacity: 0.7;
+}
+
+.theme-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1rem;
+}
+
+.theme-toggle-button:hover {
+  opacity: 0.7;
+}
+
+/* Dark mode specific styles */
+.app.dark-mode {
+  background-color: #333; /* Dark mode body background color */
+  color: #fff; /* Dark mode text color */
+}
+
+.header.dark-mode {
+  background-color: #666; /* Dark mode header background color */
+}
+
+#title.dark-mode {
+  color: #fff; /* Dark mode title text color */
+}
+
+.info-panel {
+  background-color: #fff; /* Light mode info panel background color */
+  color: #333; /* Light mode info panel text color */
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.info-panel p {
+  text-align:justify;
+}
+
+
+.info-panel.dark-mode {
+  background-color: #444; /* Dark mode info panel background color */
+  color: #fff; /* Dark mode info panel text color */
+}
+
+.github-button {
+  background-color: #f0f0f0; /* Light mode GitHub button background color */
+  color: #333; /* Light mode GitHub button text color */
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size:medium;
+}
+
+.github-button:hover {
+  background-color: #ccc; /* Light mode GitHub button hover background color */
+}
+
+.github-button.dark-mode {
+  background-color: #666; /* Dark mode GitHub button background color */
+  color: #fff; /* Dark mode GitHub button text color */
+}
+
+.github-button.dark-mode:hover {
+  background-color: #888; /* Dark mode GitHub button hover background color */
+}
+img {
+  transform: translateY(5px);
+}
+
