@@ -37,19 +37,22 @@ However, "FAIR SPLIT" takes it a step further by accommodating different categor
 5. Open your browser and navigate to `http://localhost:3000` to use the application.
 
 
-## Detailed working
+## Detailed working 
+`in ExpenseTracker.js`
 
-<strong>Adding a New User:</strong> When the "Add User" button is clicked, the <code>addUser</code> function is called:
-```javascript
-const addUser = () => {
-  const newUser = {
-    name: `User${users.length + 1}`,
-    expense: 0,
-    isEditing: false
-  };
-  setUsers([...users, newUser]);
-};
-```
+- add users, expenses, and calculate how much each person owes.
+    useState manages various states:
+    1. users: An array to store user data (name, expense amount, etc.).
+    <a href="https://github.com/yourusername/yourrepository/blob/main/anotherREADME.md" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #007bff; border-radius: 5px; text-decoration: none;">view explanation</a>
+    
+    2. expenses: An array to store the list of expenses.
+    <a href="https://github.com/yourusername/yourrepository/blob/main/anotherREADME.md" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #007bff; border-radius: 5px; text-decoration: none;">view explanation</a>
+    
+    3. detailsVisible: Tracks whether detailed information for each user is visible.
+    <a href="https://github.com/yourusername/yourrepository/blob/main/anotherREADME.md" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #007bff; border-radius: 5px; text-decoration: none;">view explanation</a>
+
+- useEffect automatically recalculates user expenses whenever the users or expenses state changes. This ensures the displayed values stay up-to-date.
+  <a href="https://github.com/yourusername/yourrepository/blob/main/anotherREADME.md" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #007bff; border-radius: 5px; text-decoration: none;">view explanation</a>
 
 
 ## Contributing
