@@ -37,6 +37,21 @@ However, "FAIR SPLIT" takes it a step further by accommodating different categor
 5. Open your browser and navigate to `http://localhost:3000` to use the application.
 
 
+## Detailed working
+
+<strong>Adding a New User:</strong> When the "Add User" button is clicked, the <code>addUser</code> function is called:
+```javascript
+const addUser = () => {
+  const newUser = {
+    name: `User${users.length + 1}`,
+    expense: 0,
+    isEditing: false
+  };
+  setUsers([...users, newUser]);
+};
+```
+
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request for any feature additions or bug fixes.
