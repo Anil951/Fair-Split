@@ -17,7 +17,8 @@
 2. Adding a New User:
   When a new user is added using the addUser function, the corresponding value in detailsVisible is set to false to indicate that the details for this user are not visible yet:
 
-  `const addUser = () => {
+ ```javascript
+  const addUser = () => {
   const newUser = {
     name: User${users.length + 1},
     expense: 0,
@@ -25,21 +26,21 @@
   };
   setUsers([...users, newUser]);
   setDetailsVisible([...detailsVisible, false]); // Adds a new entry for the new user, initially false
-};`
+};
+    ```
 
   This ensures that when a new user is added, their details are hidden by default.
 
 3. Toggling Visibility:
   When a user clicks on the toggle details button, the toggleDetails function is called, which updates the corresponding index in detailsVisible to either true or false:
 
-   `
+    ```javascript
    const toggleDetails = (index) => {
     const newDetailsVisible = [...detailsVisible];
     newDetailsVisible[index] = !newDetailsVisible[index]; // Toggles the visibility
     setDetailsVisible(newDetailsVisible);
-  };`
-
-
+    };  
+    ```
 
 
   This toggles the visibility of that user's details. If the details were visible, they become hidden, and vice versa.
