@@ -27,7 +27,7 @@
   setUsers([...users, newUser]);
   setDetailsVisible([...detailsVisible, false]); // Adds a new entry for the new user, initially false
 };
-    ```
+ ```
 
   This ensures that when a new user is added, their details are hidden by default.
 
@@ -39,9 +39,7 @@
     const newDetailsVisible = [...detailsVisible];
     newDetailsVisible[index] = !newDetailsVisible[index]; // Toggles the visibility
     setDetailsVisible(newDetailsVisible);
-    };  
-    ```
-
+    };  ```
 
   This toggles the visibility of that user's details. If the details were visible, they become hidden, and vice versa.
 
