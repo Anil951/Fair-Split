@@ -16,19 +16,32 @@
   background-color: #cbcbcb;;
 }
 
-.add-user-button, .add-expense-button {
+.add-user-button, .add-expense-button, .download-receipt-button{
     padding: 10px 20px;
     font-size: 16px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     border-radius: 5px;
     border: none;
     background-color: #ffffff;
     color: black;
     cursor: pointer;
 }
+.download-receipt-button{
+  padding: 7px 15px;
+  margin: 0px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+    position: absolute;  /* Position it absolutely */
+    top: 80px;           /* Adjust top position to your liking */
+    right: 10px;   
+}
 
-.add-user-button:hover, .add-expense-button:hover {
+.add-user-button:hover, .add-expense-button:hover ,.download-receipt-button:hover{
   background-color: #2e2e2e;
   color:white;
 }
@@ -177,6 +190,7 @@
 }
 
 /* Dark mode styles */
+/* Dark mode styles */
 .dark-theme .expense-tracker {
   background-color: #222;
   color: #fff;
@@ -195,19 +209,20 @@
   color: #fff;
 }
 
-.dark-theme .add-user-button, .dark-theme .add-expense-button, .dark-theme .add-bill-button {
-  background-color: #4f4f4f;
-  color: white;
+.dark-theme .add-user-button, .dark-theme .add-expense-button, .dark-theme .add-bill-button, .dark-theme .download-receipt-button {
+  background-color: #4f4f4f; /* same background color */
+  color: white;              /* white text */
 }
 
-.dark-theme .add-user-button:hover, .dark-theme .add-expense-button:hover, .dark-theme .add-bill-button:hover {
-  background-color: #ffffff;
-  color: black;
+.dark-theme .add-user-button:hover, .dark-theme .add-expense-button:hover, .dark-theme .add-bill-button:hover, .dark-theme .download-receipt-button:hover {
+  background-color: #ffffff;  /* white background on hover */
+  color: black;               /* black text on hover */
 }
 
 .dark-theme .currency-input .currency-symbol {
   color: #ccc;
 }
+
 
 /* .dark-theme .user-details input, .dark-theme .currency-input input[type="number"] {
   background-color: #444;

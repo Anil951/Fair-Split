@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './ExpenseTracker.css';
+import { downloadReceipt } from './Download';
 
 const ExpenseTracker = () => {
   const [users, setUsers] = useState([]);
@@ -165,6 +166,11 @@ const ExpenseTracker = () => {
   return (
     <div className="expense-tracker">
       <button className="add-user-button" onClick={addUser}>Add User</button>
+
+      <button className="download-receipt-button" onClick={() => downloadReceipt(users, expenses)}>
+        Download Receipt
+      </button>
+
       <div className="users-container">
         {users.map((user, index) => (
           <div key={index} className="user-card">
