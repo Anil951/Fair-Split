@@ -10,6 +10,10 @@ FAIR SPLIT is a React-based web application designed to track and manage shared 
 - Dark mode toggle functionality.
 - Simple, one-time-use application without the need for a backend database.
 
+## Demo
+https://github.com/user-attachments/assets/fb374a0a-31e0-4b48-a800-8d3670d8ff7f
+
+
 ## Usage
 
 1. **Add Users:** Input the names of users who participated in the shared expense.
